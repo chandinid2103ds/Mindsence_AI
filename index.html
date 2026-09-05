@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MindSense AI</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="calm">
+<div id="loader"><div class="orb"></div><span>MindSense AI</span></div>
+
+<header><nav>
+<a class="logo" href="#home">MindSense</a>
+<div class="links">
+    <a href="#home">Home</a>
+    <a href="#chatbot">AI Chat</a>
+    <a href="#about">About</a>
+    <a href="#checkin">Check-in</a>
+    <a href="#insights">Insights</a>
+    <a href="#resources">Resources</a>
+</div>
+<a href="login.html" class="login-btn">Login</a><button id="menu" aria-label="Open navigation menu">☰</button>
+</nav></header>
+
+<main>
+<section id="home" class="hero">
+<div class="glow g1"></div><div class="glow g2"></div><div class="stars"></div>
+<div class="heroText reveal">
+<small>AI-POWERED WELLNESS • 01 / 07</small>
+<h1>Mindful<br><i>well-being.</i></h1>
+<p>A calm digital space to understand your feelings, track your wellness and discover small steps that may help you feel better.</p>
+<a class="cta" href="#checkin">Start check-in <b>↗</b></a>
+</div>
+<div class="landscape" aria-hidden="true">
+<div class="mountain m1"></div><div class="mountain m2"></div>
+
+<div class="mountain m3"></div><div class="plants p1"></div><div class="plants p2"></div>
+<div class="ground"></div>
+</div>
+
+<div class="mindsense-brain" aria-hidden="true">
+
+    <div class="brain-aura"></div>
+
+    <svg class="brain-svg"
+         viewBox="0 0 500 420"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+            <filter id="brainGlow">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+
+            <linearGradient id="brainGradient"
+                x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#b9f8ff"/>
+                <stop offset="45%" stop-color="#6c8cff"/>
+                <stop offset="75%" stop-color="#9c6cff"/>
+                <stop offset="100%" stop-color="#ff9eea"/>
+            </linearGradient>
+        </defs>
+
+        <!-- Brain shape -->
+        <path class="brain-outline"
+            d="
+            M250 75
+            C220 45 170 48 145 75
+            C115 68 85 88 85 125
+            C55 145 62 185 82 202
+            C58 230 70 270 103 278
+            C90 310 115 342 148 340
+            C170 370 215 365 232 340
+            L250 350
+            L268 340
+            C285 365 330 370 352 340
+            C385 342 410 310 397 278
+            C430 270 442 230 418 202
+            C438 185 445 145 415 125
+            C415 88 385 68 355 75
+            C330 48 280 45 250 75
+            Z"
+        />
+
+        <!-- Left folds -->
+        <g class="brain-folds">
+            <path d="
+                M145 100
+                C120 110 125 135 150 140
+                C175 145 175 165 150 170
+                C125 175 125 200 150 205
+                C180 210 180 235 150 245
+                C125 253 135 275 160 280
+            "/>
+
+            <path d="
+                M195 82
+                C170 100 175 120 200 125
+                C220 130 215 150 190 155
+                C165 160 170 185 195 190
+                C220 195 220 215 195 220
+                C170 225 175 250 200 255
+                C220 260 215 285 195 300
+            "/>
+
+            <path d="
+                M110 155
+                C135 150 145 160 135 180
+                C125 200 140 215 160 210
+            "/>
+
+            <path d="
+                M105 235
+                C130 225 145 240 135 260
+                C125 280 145 295 165 285
+            "/>
+        </g>
+
+        <!-- Right folds -->
+        <g class="brain-folds">
+            <path d="
+                M355 100
+                C380 110 375 135 350 140
+                C325 145 325 165 350 170
+                C375 175 375 200 350 205
+                C320 210 320 235 350 245
+                C375 253 365 275 340 280
+            "/>
+
+            <path d="
+                M305 82
+                C330 100 325 120 300 125
+                C280 130 285 150 310 155
+                C335 160 330 185 305 190
+                C280 195 280 215 305 220
+                C330 225 325 250 300 255
+                C280 260 285 285 305 300
+            "/>
+
+            <path d="
+                M390 155
+                C365 150 355 160 365 180
+                C375 200 360 215 340 210
+            "/>
+
+            <path d="
+                M395 235
+                C370 225 355 240 365 260
+                C375 280 355 295 335 285
+            "/>
+        </g>
+
+        
+
+        <!-- Neural lines -->
+        <g class="neural-lines">
+            <line x1="150" y1="140" x2="200" y2="125"/>
+            <line x1="200" y1="125" x2="250" y2="165"/>
+            <line x1="250" y1="165" x2="300" y2="125"/>
+            <line x1="300" y1="125" x2="350" y2="140"/>
+
+            <line x1="150" y1="205" x2="200" y2="190"/>
+            <line x1="200" y1="190" x2="250" y2="220"/>
+            <line x1="250" y1="220" x2="300" y2="190"/>
+            <line x1="300" y1="190" x2="350" y2="205"/>
+
+            <line x1="160" y1="280" x2="205" y2="255"/>
+            <line x1="205" y1="255" x2="250" y2="280"/>
+            <line x1="250" y1="280" x2="295" y2="255"/>
+            <line x1="295" y1="255" x2="340" y2="280"/>
+        </g>
+
+        <!-- Neural nodes -->
+        <g class="neural-nodes">
+            <circle cx="150" cy="140" r="6"/>
+            <circle cx="200" cy="125" r="6"/>
+            <circle cx="250" cy="165" r="7"/>
+            <circle cx="300" cy="125" r="6"/>
+            <circle cx="350" cy="140" r="6"/>
+
+            <circle cx="150" cy="205" r="5"/>
+            <circle cx="200" cy="190" r="6"/>
+            <circle cx="250" cy="220" r="7"/>
+            <circle cx="300" cy="190" r="6"/>
+            <circle cx="350" cy="205" r="5"/>
+
+            <circle cx="160" cy="280" r="5"/>
+            <circle cx="205" cy="255" r="6"/>
+            <circle cx="250" cy="280" r="7"/>
+            <circle cx="295" cy="255" r="6"/>
+            <circle cx="340" cy="280" r="5"/>
+        </g>
+
+    </svg>
+</div>
+
+<div class="scroll">SCROLL TO EXPLORE <span></span></div>
+</section>
+
+<!-- AI CHATBOT -->
+<section id="chatbot" class="chatbot-section">
+
+    <div class="num">02 / 07</div>
+
+    <div class="chatbot-intro reveal">
+
+        <small>MINDSENSE AI ASSISTANT</small>
+
+        <h2>
+            A safe space to<br>
+            <i>be heard.</i>
+        </h2>
+
+        <p>
+            Talk with MindSense AI about your feelings,
+            stress, worries, or everyday challenges.
+        </p>
+
+        <a class="cta" href="chatbot/chatbot.html">
+            Talk to MindSense AI <b>↗</b>
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about" class="light">
+<div class="num">03 / 07</div><div class="two reveal">
+<div><small>A GENTLER APPROACH</small><h2>There is more to<br><i>wellness</i> than a score.</h2></div>
+<div class="copy"><p>MindSense AI combines weekly self-reflection, wellness tracking, responsible machine learning and explainable insights in one calm experience.</p><p class="muted">This is an educational and screening-oriented prototype, not a medical diagnosis system.</p></div>
+</div>
+</section>
+
+
+
+
+
+<section id="checkin" class="light">
+<div class="num">04 / 07</div><div class="check reveal"><small>WEEKLY REFLECTION</small><h2>How have you been<br><i>feeling?</i></h2>
+<div class="card"><div class="top"><span id="qcount">Question 1 of 5</span><span id="pct">20%</span></div><div class="bar"><b id="bar"></b></div>
+<div class="q" id="q"></div><div class="opts" id="opts"></div></div></div>
+</section>
+
+<section id="insights" class="insights">
+<div class="num">05 / 07</div><div class="inside reveal"><small>YOUR WELLNESS SNAPSHOT</small><h2>A small picture<br>of your <i>week.</i></h2>
+<div class="result"><div class="ring"><strong id="score">72</strong><small>/100</small></div><div><span class="pill" id="state">Balanced</span><h3 id="result">Your reported pattern looks fairly balanced.</h3><p>This snapshot reflects self-reported responses. It is a reflection tool, not a diagnosis.</p></div></div>
+<div class="metrics"><div>STRESS<strong id="stress">Moderate</strong></div><div>SLEEP<strong id="sleep">6–7 h</strong></div><div>MOTIVATION<strong id="mot">Moderate</strong></div><div>CONNECTION<strong id="connect">Good</strong></div></div>
+</div></section>
+
+<section class="light features">
+<div class="num">06 / 07</div><div class="inside reveal"><small>ONE PLACE TO REFLECT</small><h2>More than a prediction.<br><i>A journey.</i></h2>
+<div class="grid"><article><b>01</b><span>◌</span><h3>Weekly check-ins</h3><p>Track mood, stress, sleep, motivation and connection over time.</p></article><article><b>02</b><span>✦</span><h3>Responsible ML</h3><p>Demonstrate classification, regression and clustering on wellness data.</p></article><article><b>03</b><span>⌁</span><h3>Explainable AI</h3><p>Show which reported inputs influenced a model output.</p></article><article><b>04</b><span>♡</span><h3>Private by design</h3><p>Consent, data minimization and transparent AI are built into the concept.</p></article></div>
+</div></section>
+
+<section id="resources" class="resources">
+<div class="num">07 / 07</div><div class="res reveal"><small>LEARN • REFLECT • SEEK SUPPORT</small><h2>Understanding yourself<br>starts with <i>curiosity.</i></h2><p>Explore depression, anxiety, stress, sleep, sentiment, behavior, privacy, fairness and ethical AI.</p><div class="pills"><span>Depression</span><span>Anxiety</span><span>Stress</span><span>Sleep</span><span>Sentiment</span><span>Ethics</span></div><a class="cta" href="#home">Back to top ↗</a></div>
+</section>
+</main>
+
+<footer><div class="logo">MindSense</div><p>Understand yourself. Track your well-being. Grow every week.</p><span>Academic / Research Prototype • 2026</span></footer>
+
+<script src="js/script.js"></script>
+</body></html>

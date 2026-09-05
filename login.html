@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | MindSense AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page" style="
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+">
+
+    <div class="auth-container" style="
+    position:fixed;
+    inset:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    box-sizing:border-box;
+">
+
+        <div class="loginBox auth-card">
+
+            <a href="index.html" class="auth-back">
+                ← Back to MindSense
+            </a>
+
+            <small>MINDSENSE AI</small>
+
+            <h2>Welcome <i>back.</i></h2>
+
+            <p>
+                Login to view your wellness history.
+            </p>
+
+            <input
+                id="loginUsername"
+                type="text"
+                placeholder="User ID"
+                autocomplete="username"
+            >
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Password"
+                autocomplete="current-password"
+            >
+
+            <button class="cta" id="go" type="button">
+                Login
+            </button>
+
+            <p id="loginMessage"></p>
+
+            <small>
+                Don't have an account?
+                <a href="signup.html" class="auth-link">
+                    Sign Up
+                </a>
+            </small>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
